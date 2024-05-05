@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #222831;
+}
+
+.image-marquee {
+    background-image: url('../images/images.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* .content {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+} */
+
+.glowing-marquee {
+    color: #fff;
+    animation: glowing 1.5s infinite alternate;
+    font-size: 14px;
+    /* overflow: hidden; */
+}
+
+@keyframes glowing {
+    from {
+        text-shadow: 0 0 2px #fff, 0 0 5px black, 0 0 0px black;
+        /* Efek bayangan awal */
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 0px black, 0 0 0px black;
+        /* Efek bayangan akhir */
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/sidebar.css" />
+    <title>Toggleable Sidebar using HTML CSS & JavaScript</title>
+</head>
+
+<body>
+    <div id="sideMenu" class="sideMenu">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">×</a>
+        <div class="mainMenu">
+            <h2>Menu</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="home.html" target="kiri">Home</a>
+                    </li>
+                    <li>
+                        <a href="profil.html" target="kiri">Profile</a>
+                    </li>
+                    <li>
+                        <a href="galery.html" target="kiri">Galery</a>
+                    </li>
+                    <li>
+                        <a href="kontak.html" target="kiri">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="contentArea" style="background-color: black; width: 20%; height: 100vh;">
+        <span style="font-size: 30px; cursor: pointer; color: white;" onclick="openNav()">☰</span>
+        <div class="contentText" style="margin-top: 42px;">
+            <p style="color: white;">
+                <a href="home.html" target="kiri">
+                    <img style="background-color: white; border-radius: 5px; padding: 5px;" width=30 src="asset/images/home.png" alt="">
+                </a>
+            </p>
+            <p>
+                <a href="profil.html" target="kiri">
+                    <img style="background-color: white; border-radius: 5px; padding: 5px;" width=30 src="asset/images/profile-user.png">
+                </a>
+            </p>
+            <p>
+                <a href="galery.html" target="kiri">
+                    <img style="background-color: white; border-radius: 5px; padding: 5px;" width=30 src="asset/images/galery.png" alt="">
+                </a>
+            </p>
+            <p>
+                <a href="kontak.html" target="kiri">
+                    <img style="background-color: white; border-radius: 5px; padding: 5px;" width=30 src="asset/images/notebook-of-contacts.png" alt="">
+                </a>
+            </p>
+            
+        </div>
+    </div>
+
+    
+
+    <script src="asset/javascript/index.js"></script>
+</body>
+
+</html>

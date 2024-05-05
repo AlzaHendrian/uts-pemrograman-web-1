@@ -1,0 +1,21 @@
+.content {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+    margin: auto;
+}
+
+.pagination button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
